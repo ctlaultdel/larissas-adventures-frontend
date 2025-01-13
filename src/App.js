@@ -18,10 +18,10 @@ import france from "./imgs/adventure_cards/france.jpg";
 import maui from "./imgs/adventure_cards/maui.jpeg";
 import cairns from "./imgs/adventure_cards/cairns.jpg";
 import crosscountry from "./imgs/adventure_cards/crosscountry.jpeg";
-
 //
 
 function App() {
+  // Temporary thumbnail data - will be coming from backend API call //
   const adventureThumbNails = [
     { name: "Mt Shuksan", img: shuksan },
     { name: "Le Petit Cheval", img: lepetitcheval },
@@ -38,6 +38,7 @@ function App() {
     { name: "Maui", img: maui },
     { name: "Cross Country USA - North", img: crosscountry },
   ];
+  //
 
   return (
     <div>
@@ -53,7 +54,7 @@ function App() {
             experience the world by learning about other cultures through
             travel, embracing challenge and uncertainty through adventures, and
             live my life to the fullest! I hope my stories inspire you and share
-            beta for your own adventures 🖤
+            knowledge for your own adventures 🖤
           </p>
           <a href="https://www.instagram.com/lollapalarza/?hl=en">
             <img
