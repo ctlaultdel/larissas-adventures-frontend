@@ -1,0 +1,107 @@
+.main-header {
+    display: flex;
+    height: 125px;
+    font-size: 70px;
+    font-weight: bold;
+    margin: 12px;
+    justify-content: center;
+
+    img {
+    margin: 5px;
+    }
+}
+
+.intro-container {
+    display: flex;
+    flex-direction: row;
+    max-height: 600px;
+    margin: 1% 20% 2% 20%;
+
+    .about-me-section {
+    display: flex;
+    flex-direction: column;
+    max-width: 70%;
+    background-color: #F0F0F0;
+    border-radius: 25px;
+    margin: 50px;
+
+    .title {
+        display: flex;
+        margin: 20px 0px 0px 20px;
+        font-size: 40px;
+        font-family: cursive;
+    }
+
+    .about-me {
+        display: flex;
+        height: 25%;
+        font-size: 30px;
+        margin: 100px;
+    }
+
+    .instagram-logo {
+        width: 3%;
+        padding: 2% 0% 0% 40%;
+        display: flex;
+    }
+
+    .handle {
+        margin: -3% 0% 0% 44%;
+        font-size: 25px;
+    }
+}
+
+    .headshot {
+    display: flex;
+    width: 30%;
+    justify-content: left;
+    }
+}
+
+.adventures-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 8%;
+    margin-right: 8%;
+    min-height: 64vh;
+
+    .adventures-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 40px;
+    background-color: #CC5500;
+    opacity: 80%;
+    border-radius: 25px;
+    }
+
+    .adventures {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 1%;
+    margin-left: 3%;
+    align-items: center;
+
+        .adventure-cards {
+            flex: 0 1 20%;
+            min-width: 25%;
+
+            .thumbnails {
+                max-width: 80%;
+                border: 30px solid #F0F0F0;
+                margin: 15px;  
+            }
+
+            .thumbnails:hover {
+                opacity: 0.5;
+            }
+
+            .name {
+                padding-right: 15%;
+                text-align: center;
+                font-size: 35px;
+            }
+        }
+    }
+}
