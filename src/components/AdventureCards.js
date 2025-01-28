@@ -1,14 +1,18 @@
 import "./AdventureCards.css";
 import React, { useState, useEffect } from "react";
+import { RotatingLines } from "react-loader-spinner";
 import axios from "axios";
 
 function AdventureCards() {
   const [adventures, setAdventures] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     const fetchData = async () => {
       axios
-        .get("http://127.0.0.1:5000/adventures")
+        .get(
+          "https://larissas-adventures-backend-180179e43c72.herokuapp.com/adventures"
+        )
         .then((response) => {
           const data = response.data.map((obj) => {
             return {
@@ -17,6 +21,7 @@ function AdventureCards() {
             };
           });
           setAdventures(data);
+          setIsLoading(false);
         })
         .catch((error) => {
           console.log("Error fetching adventures: ", error);
@@ -29,6 +34,17 @@ function AdventureCards() {
   return (
     <div className="adventures-container">
       <div className="adventures-section">Adventure Cards</div>
+      {isLoading && (
+        <div className="loading-spinner">
+          <RotatingLines
+            strokeColor="grey"
+            strokeWidth="5"
+            animationDuration="0.75"
+            width="100"
+            visible={true}
+          />
+        </div>
+      )}
       <div className="adventures">
         {adventures.map((adv) => (
           <div key={adv.name} className="adventure-cards">
