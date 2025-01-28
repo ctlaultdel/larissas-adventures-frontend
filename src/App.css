@@ -1,6 +1,65 @@
+.main-header {
+  display: flex;
+  height: 125px;
+  font-size: 70px;
+  font-weight: bold;
+  margin: 12px;
+  justify-content: center;
+
+  img {
+  margin: 5px;
+  }
+}
+
+.intro-container {
+  display: flex;
+  flex-direction: row;
+  max-height: 600px;
+  margin: 1% 20% 2% 20%;
+
+  .about-me-section {
+  display: flex;
+  flex-direction: column;
+  max-width: 70%;
+  background-color: #F0F0F0;
+  border-radius: 25px;
+  margin: 50px;
+
+  .title {
+      display: flex;
+      margin: 20px 0px 0px 20px;
+      font-size: 40px;
+      font-family: cursive;
+  }
+
+  .about-me {
+      display: flex;
+      font-size: 30px;
+      margin: 5% 10% 2% 10%;
+  }
+
+  .instagram-logo {
+      width: 3%;
+      padding: 2% 0% 0% 40%;
+      display: flex;
+  }
+
+  .handle {
+      margin: -3% 0% 0% 44%;
+      font-size: 25px;
+  }
+}
+
+  .headshot {
+  display: flex;
+  max-width: 30%;
+  justify-content: left;
+  }
+}
+
 footer {
   display: flex;
   margin-top: auto;
   justify-content: center;
-  font-size: 16pt;
+  font-size: 14pt;
 }

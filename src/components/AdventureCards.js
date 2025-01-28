@@ -11,7 +11,6 @@ function AdventureCards() {
         .get("http://127.0.0.1:5000/adventures")
         .then((response) => {
           const data = response.data.map((obj) => {
-            console.log(obj.img);
             return {
               ...obj,
               img_src: `data:image/jpeg;base64,${obj.img}`,
@@ -33,13 +32,21 @@ function AdventureCards() {
       <div className="adventures">
         {adventures.map((adv) => (
           <div key={adv.name} className="adventure-cards">
-            <a href="https://github.com/ctlaultdel">
+            {adv.public ? (
+              <a href={adv.url}>
+                <img
+                  src={adv.img_src}
+                  alt={adv.name}
+                  className="thumbnails"
+                ></img>
+              </a>
+            ) : (
               <img
                 src={adv.img_src}
                 alt={adv.name}
                 className="thumbnails"
               ></img>
-            </a>
+            )}
             <div className="name">{adv.name}</div>
           </div>
         ))}
