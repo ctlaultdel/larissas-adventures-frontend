@@ -5,14 +5,13 @@ import axios from "axios";
 function AdventureCards() {
   const [adventures, setAdventures] = useState([]);
 
-  // TODO: Figure out why the thumbnails are not working
-
   useEffect(() => {
     const fetchData = async () => {
       axios
         .get("http://127.0.0.1:5000/adventures")
         .then((response) => {
           const data = response.data.map((obj) => {
+            console.log(obj.img);
             return {
               ...obj,
               img_src: `data:image/jpeg;base64,${obj.img}`,
