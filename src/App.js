@@ -9,7 +9,7 @@ function App() {
     <div>
       <header className="main-header">
         <img src={logo} alt="logo"></img>
-        Larissa's Adventures Blog
+        Larissa's Adventures
       </header>
       <div className="intro-container">
         <div className="about-me-section">
