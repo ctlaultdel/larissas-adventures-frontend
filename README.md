@@ -7,7 +7,7 @@ I am a traveler, adventurist, and lifelong learner. My goal is to experience the
 ## Project Description
 
 - Frontend: React (this repository)
-- Backend: Python Flask (in development)
+- Backend: Python Flask (https://github.com/ctlaultdel/larissas-adventures-backend)
 
 Strategy: Blog template design
 1. Blog templates stored in database (body, figures)
