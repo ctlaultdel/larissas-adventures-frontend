@@ -1,65 +1,76 @@
+/* 12px */
 .main-header {
   display: flex;
-  height: 125px;
-  font-size: 70px;
+  font-size: 340%;
   font-weight: bold;
-  margin: 12px;
+  overflow-wrap: break-word;
+  padding-top: 1%;
   justify-content: center;
+  background-color: light;
 
   img {
-  margin: 5px;
+  margin-right: 0.5%;
+  max-height: 2.5dvh;
   }
 }
 
 .intro-container {
   display: flex;
   flex-direction: row;
-  max-height: 600px;
-  margin: 1% 20% 2% 20%;
+  height: auto;
+  padding: 1% 20% 2% 20%;
 
   .about-me-section {
   display: flex;
   flex-direction: column;
-  max-width: 70%;
   background-color: #F0F0F0;
-  border-radius: 25px;
-  margin: 50px;
+  border-radius: 8%;
+  padding: 1%;
+  height: auto;
 
   .title {
       display: flex;
-      margin: 20px 0px 0px 20px;
-      font-size: 40px;
+      margin: 3% 0 0 3%;
+      font-size: 250%;
       font-family: cursive;
   }
 
   .about-me {
       display: flex;
-      font-size: 30px;
-      margin: 5% 10% 2% 10%;
+      font-size: 183%;
+      margin: 3% 4% 3% 4%;
+  }
+
+  .instagram-container {
+    display: inline-block;
   }
 
   .instagram-logo {
-      width: 3%;
-      padding: 2% 0% 0% 40%;
-      display: flex;
+    max-width: 2dvh;
+    float: left;
+    padding-left: 10%;
   }
 
   .handle {
-      margin: -3% 0% 0% 44%;
-      font-size: 25px;
+    padding-left: 0.5%;
+    float: left;
+    font-size: 25px;
   }
 }
 
-  .headshot {
-  display: flex;
-  max-width: 30%;
-  justify-content: left;
-  }
+.headshot {
+  max-height: 20dvh;
+}
+
+.headshot-container {
+  height: auto;
+  padding-left: 1%;
+}
 }
 
 footer {
   display: flex;
   margin-top: auto;
   justify-content: center;
-  font-size: 14pt;
+  font-size: 150%;
 }

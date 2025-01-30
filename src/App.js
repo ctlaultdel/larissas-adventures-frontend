@@ -21,17 +21,19 @@ function App() {
             live my life to the fullest! I hope my stories inspire you and share
             knowledge for your own adventures 🖤
           </p>
-          <a href="https://www.instagram.com/lollapalarza/?hl=en">
-            <img
-              alt="instagram"
-              src={instagramlogo}
-              className="instagram-logo"
-            ></img>
-            <p className="handle">lollapalarza</p>
-          </a>
+          <div className="instagram-container">
+            <a href="https://www.instagram.com/lollapalarza/?hl=en">
+              <img
+                alt="instagram"
+                src={instagramlogo}
+                className="instagram-logo"
+              ></img>
+              <p className="handle">lollapalarza</p>
+            </a>
+          </div>
         </div>
-        <div className="headshot">
-          <img src={headshot} alt="headshot" />
+        <div className="headshot-container">
+          <img className="headshot" src={headshot} alt="headshot" />
         </div>
       </div>
       <AdventureCards />
