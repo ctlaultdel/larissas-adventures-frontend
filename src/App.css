@@ -4,8 +4,9 @@
   display: flex;
   font-size: 100%;
   font-weight: bold;
-  padding: 2% 0 1% 0;
+  padding: 0.5% 0 0.5% 0;
   justify-content: center;
+  align-items: center;
   border: thick solid white;
   background-color:  #f4efeb;
 
@@ -19,8 +20,9 @@
   display: flex;
   flex-direction: row;
   height: auto;
-  padding: 4%;
+  padding: 5%;
   align-items: center;
+  justify-content: center;
 
   .about-me-section {
   display: flex;
@@ -43,30 +45,31 @@
     }
 
     .instagram-container {
-      display: inline-block;
+      display: flex;
+      align-items: center;
       padding: 0 30% 0 30%;
-    }
 
-    .instagram-logo {
-      max-width: 10%;
-      float: left;
-    }
+      .instagram-logo {
+        max-width: 10%;
+        float: left;
+      }
 
-    .handle {
-      padding-left: 1%;
-      float: left;
-      font-size: 30%;
-      color: black;
+      .handle {
+        padding-left: 1%;
+        float: left;
+        font-size: 30%;
+        color: black;
+      }
     }
-  }
-
-  .headshot {
-    max-height: 20dvh;
   }
 
   .headshot-container {
     height: auto;
     padding-left: 3%;
+    
+    .headshot {
+      max-height: 18dvh;
+    }
   }
 }
 
@@ -78,9 +81,13 @@ footer {
 
 @media only screen and (min-width: 768px) {
   /* Desktops */
-  .main-header {font-size: 340%;}
+  .main-header {font-size: 400%;}
+  .main-header > img {max-height: 5dvh;}
+  .intro-container {padding: 1% 10% 1% 10%;}
+  .intro-container > .about-me-section {padding: 4%;}
   .intro-container > .about-me-section > .title {font-size: 250%;}
   .intro-container > .about-me-section > .about-me {font-size: 200%;}
   .intro-container > .about-me-section > .instagram-container > .handle {font-size:200%;}
+  .intro-container > .headshot-container > .headshot {max-height: 40dvh;}
   footer {font-size: 150%;}
 }
