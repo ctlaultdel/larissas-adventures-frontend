@@ -1,16 +1,17 @@
-/* 12px */
+/* Mobile phones */
+
 .main-header {
   display: flex;
-  font-size: 340%;
+  font-size: 100%;
   font-weight: bold;
-  overflow-wrap: break-word;
-  padding-top: 1%;
+  padding: 2% 0 1% 0;
   justify-content: center;
-  background-color: light;
+  border: thick solid white;
+  background-color:  #f4efeb;
 
   img {
-  margin-right: 0.5%;
-  max-height: 2.5dvh;
+    padding-right: 0.5%;
+    max-height: 2.5dvh;
   }
 }
 
@@ -18,59 +19,68 @@
   display: flex;
   flex-direction: row;
   height: auto;
-  padding: 1% 20% 2% 20%;
+  padding: 4%;
+  align-items: center;
 
   .about-me-section {
   display: flex;
   flex-direction: column;
   background-color: #F0F0F0;
-  border-radius: 8%;
+  border-radius: 25px;
   padding: 1%;
-  height: auto;
 
-  .title {
-      display: flex;
-      margin: 3% 0 0 3%;
-      font-size: 250%;
-      font-family: cursive;
+    .title {
+        display: flex;
+        margin: 3% 0 0 3%;
+        font-size: 90%;
+        font-family: cursive;
+    }
+
+    .about-me {
+        display: flex;
+        font-size: 40%;
+        margin: 4% 4% 4% 4%;
+    }
+
+    .instagram-container {
+      display: inline-block;
+      padding: 0 30% 0 30%;
+    }
+
+    .instagram-logo {
+      max-width: 10%;
+      float: left;
+    }
+
+    .handle {
+      padding-left: 1%;
+      float: left;
+      font-size: 30%;
+      color: black;
+    }
   }
 
-  .about-me {
-      display: flex;
-      font-size: 183%;
-      margin: 3% 4% 3% 4%;
+  .headshot {
+    max-height: 20dvh;
   }
 
-  .instagram-container {
-    display: inline-block;
+  .headshot-container {
+    height: auto;
+    padding-left: 3%;
   }
-
-  .instagram-logo {
-    max-width: 2dvh;
-    float: left;
-    padding-left: 10%;
-  }
-
-  .handle {
-    padding-left: 0.5%;
-    float: left;
-    font-size: 25px;
-  }
-}
-
-.headshot {
-  max-height: 20dvh;
-}
-
-.headshot-container {
-  height: auto;
-  padding-left: 1%;
-}
 }
 
 footer {
+  font-size: 10%;
   display: flex;
-  margin-top: auto;
   justify-content: center;
-  font-size: 150%;
+}
+
+@media only screen and (min-width: 768px) {
+  /* Desktops */
+  .main-header {font-size: 340%;}
+  .intro-container > .about-me-section > .title {font-size: 250%;}
+  .intro-container > .about-me-section > .about-me {font-size: 200%;}
+  .intro-container > .about-me-section > .instagram-container > .handle {font-size:200%;}
+  footer {font-size: 150%;}
 }

@@ -15,20 +15,22 @@ function App() {
         <div className="about-me-section">
           <div className="title">Bonjour, je suis Larissa!</div>
           <p className="about-me">
-            I am a traveler, adventurist, and lifelong learner. My goal is to
-            experience the world by learning about other cultures through
-            travel, embracing challenge and uncertainty through adventures, and
-            live my life to the fullest! I hope my stories inspire you and share
-            knowledge for your own adventures 🖤
+            I am a software developer by trade and climber/traveler/adventurist
+            by heart. The purpose of this blog to to document my adventures and
+            in the process share knowledge, spread awareness, and inspire others
+            for their own adventures 🖤
           </p>
           <div className="instagram-container">
-            <a href="https://www.instagram.com/lollapalarza/?hl=en">
-              <img
-                alt="instagram"
-                src={instagramlogo}
-                className="instagram-logo"
-              ></img>
-              <p className="handle">lollapalarza</p>
+            <img
+              alt="instagram"
+              src={instagramlogo}
+              className="instagram-logo"
+            ></img>
+            <a
+              className="handle"
+              href="https://www.instagram.com/lollapalarza/?hl=en"
+            >
+              @lollaplarza
             </a>
           </div>
         </div>

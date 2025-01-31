@@ -1,18 +1,20 @@
+/* Mobile phones */
+
 .adventures-container {
     display: flex;
     flex-direction: column;
-    margin-left: 8%;
-    margin-right: 8%;
-    min-height: 125vh;
+    margin-left: 3%;
+    margin-right: 3%;
+    min-height: 68dvh;
 
     .adventures-section {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    font-size: 40px;
-    background-color: #CC5500;
-    opacity: 80%;
-    border-radius: 25px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        font-size: 100%;
+        opacity: 80%;
+        background-color: #CC5500;
+        border-radius: 25px; 
     }
 
     .loading-spinner {
@@ -21,21 +23,21 @@
     }
 
     .adventures {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    margin-top: 1%;
-    margin-left: 3%;
-    align-items: center;
+        padding-top: 1%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        margin-top: 1%;
+        align-items: center;
 
         .adventure-cards {
             flex: 0 1 20%;
             min-width: 25%;
+            text-align: center;
 
             .thumbnails {
-                max-width: 80%;
-                border: 10px solid #F0F0F0;
-                margin: 15px;  
+                max-width: 90%;
+                border: 0.2em solid #F0F0F0;  
             }
 
             .thumbnails:hover {
@@ -44,9 +46,15 @@
 
             .name {
                 text-align: center;
-                font-size: 25px;
-                max-width: 80%;
+                font-size: 20%;
             }
         }
     }
 }
+
+@media only screen and (min-width: 768px) {
+    /* Desktops */
+    .adventures-container {min-height: 69dvh;}
+    .adventures-container > .adventures-section {font-size: 300%;}
+    .adventures-container > .adventures > .adventure-cards > .name {font-size: 180%;}
+    }
