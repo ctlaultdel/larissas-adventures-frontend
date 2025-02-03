@@ -17,8 +17,8 @@ function App() {
           <p className="about-me">
             I am a software developer by trade and climber/traveler/adventurist
             by heart. The purpose of this blog to to document my adventures and
-            in the process share knowledge, spread awareness, and inspire others
-            for their own adventures 🖤
+            share knowledge, spread awareness, and inspire others for their own
+            adventures 🖤
           </p>
           <div className="instagram-container">
             <img
