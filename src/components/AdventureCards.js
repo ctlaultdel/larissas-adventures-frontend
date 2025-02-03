@@ -49,7 +49,7 @@ function AdventureCards() {
         {adventures.map((adv) => (
           <div key={adv.name} className="adventure-cards">
             {adv.public ? (
-              <a href={adv.url}>
+              <a href={adv.path}>
                 <img
                   src={adv.img_src}
                   alt={adv.name}
