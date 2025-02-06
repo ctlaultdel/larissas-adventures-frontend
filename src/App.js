@@ -1,7 +1,11 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
-import AdventureCards from "./components/AdventureCards";
-import instagramlogo from "./imgs/instagramlogo.png";
-import headshot from "./imgs/headshot.png";
+
+// Components
+import HomePage from "./components/HomePage";
+import Blog from "./components/Blog";
+
+// Graphics
 import logo from "./imgs/logo.png";
 
 function App() {
@@ -11,34 +15,12 @@ function App() {
         <img src={logo} alt="logo"></img>
         Larissa's Adventures
       </header>
-      <div className="intro-container">
-        <div className="about-me-section">
-          <div className="title">Bonjour, je suis Larissa!</div>
-          <p className="about-me">
-            I am a software developer by trade and climber/traveler/adventurist
-            by heart. The purpose of this blog to to document my adventures and
-            share knowledge, spread awareness, and inspire others for their own
-            adventures 🖤
-          </p>
-          <div className="instagram-container">
-            <img
-              alt="instagram"
-              src={instagramlogo}
-              className="instagram-logo"
-            ></img>
-            <a
-              className="handle"
-              href="https://www.instagram.com/lollapalarza/?hl=en"
-            >
-              @lollaplarza
-            </a>
-          </div>
-        </div>
-        <div className="headshot-container">
-          <img className="headshot" src={headshot} alt="headshot" />
-        </div>
-      </div>
-      <AdventureCards />
+      <BrowserRouter>
+        <Routes>
+          <Route path="" element={<HomePage />} />
+          <Route path="/blog" element={<Blog />} />
+        </Routes>
+      </BrowserRouter>
       <footer>Larissa Ault © 2025</footer>
     </div>
   );

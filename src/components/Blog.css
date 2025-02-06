@@ -1,0 +1,44 @@
+/* Mobile phones */
+
+.main-img {
+    width: 100%;
+    aspect-ratio: 3 / 1;
+    object-fit: cover;
+}
+
+.title-container {
+    text-align: center;
+
+    header {
+        font-size: 95%;
+    }
+    p {
+        font-style: italic;
+        font-size: 15%;
+    }
+}
+
+.content-container {
+    margin: 0 4% 100% 4%;
+    text-align: center;
+
+    img {
+        width: 80%;
+        margin-top: 3%;
+    }
+
+    .captions {
+        font-style: italic;
+        margin-bottom: 3%;
+        font-size: 15%;
+    }
+
+    .paragraphs {
+        margin: 3%;
+        font-size: 80%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    /* Desktops */
+}
