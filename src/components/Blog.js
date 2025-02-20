@@ -35,8 +35,6 @@ function Blog() {
     fetchData();
   }, [adventureID]);
 
-  console.log(blog.content);
-
   return (
     <div>
       <img src={src} alt={adventureID} className="main-img"></img>

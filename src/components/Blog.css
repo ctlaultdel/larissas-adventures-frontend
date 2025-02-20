@@ -19,7 +19,7 @@
 }
 
 .content-container {
-    margin: 0 4% 100% 4%;
+    margin: 0 6% 100% 6%;
     text-align: center;
 
     img {
@@ -41,4 +41,12 @@
 
 @media only screen and (min-width: 768px) {
     /* Desktops */
+    .main-img {aspect-ratio: 4 / 1;}
+    .title-container > header {font-size: 200%;}
+    .title-container > p {font-size: 150%;}
+    .content-container > div > .captions {font-size: 60%;}
+    .content-container {
+        margin: 0 10% 5% 10%;
+        font-size: 250%;
+    }
 }
