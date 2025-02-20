@@ -15,7 +15,7 @@ function HomePage() {
           <div className="title">Bonjour, je suis Larissa!</div>
           <p className="about-me">
             I am a software developer by trade and climber/traveler/adventurist
-            by heart. The purpose of my blog to to document my adventures, share
+            by heart. The purpose of my blog is to document my adventures, share
             knowledge, and inspire others for their own adventures 🖤
           </p>
           <div className="instagram-container">
