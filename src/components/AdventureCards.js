@@ -35,9 +35,8 @@ function AdventureCards() {
   }, []);
 
   const handleClick = (e) => {
-    const adventureID = e.target.alt;
-    const src = e.target.src;
-    navigate("/blog", { state: { adventureID: adventureID, src: src } });
+    const alt_name = e.target.alt;
+    navigate(`/blog?name=${alt_name}`);
   };
 
   return (
@@ -60,14 +59,14 @@ function AdventureCards() {
             {adv.public ? (
               <img
                 src={adv.img_src}
-                alt={adv.id}
+                alt={adv.alt_name}
                 className="thumbnails"
                 onClick={handleClick}
               ></img>
             ) : (
               <img
                 src={adv.img_src}
-                alt={adv.name}
+                alt={adv.alt_name}
                 className="thumbnails"
               ></img>
             )}
